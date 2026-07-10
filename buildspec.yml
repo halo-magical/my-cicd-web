@@ -1,1 +1,14 @@
-.
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Install phase started"
+  build:
+    commands:
+      - echo "Build phase started"
+      - echo "Nothing to build for static HTML"
+artifacts:
+  files:
+    - index.html
+    - appspec.yml
+    - scripts/**/*
